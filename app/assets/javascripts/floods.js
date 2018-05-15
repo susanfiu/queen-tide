@@ -14,6 +14,8 @@ function initReportMap() {
 
     var input = document.createElement("input");
     var autocomplete = new google.maps.places.Autocomplete(input);
+    input.setAttribute("placeholder", "Please enter location or click on the map.");
+    input.classList.add("floods");
     floodMap.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
     var geocoder = new google.maps.Geocoder();
